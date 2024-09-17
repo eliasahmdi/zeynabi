@@ -1,0 +1,153 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #0071e3;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    background-color: #0071e3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Header */
+.main-header {
+    background-color: black;
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo img {
+    width: 40px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+/* Hero Section */
+.hero {
+    height: auto;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+/* Column Gallery */
+.gallery-container-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    width: 200px; /* Adjusted to match product size */
+    height: 250px; /* Set fixed height */
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.gallery-slide-column {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-slide-column img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.gallery-slide-column.active {
+    display: block;
+}
+
+/* Column Navigation Buttons */
+.prev-column, .next-column {
+    position: absolute;
+    background-color: rgba(181, 181, 181, 0.129);
+    color: rgb(251, 251, 251);
+    border: none;
+    font-size: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.prev-column {
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.next-column {
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.prev-column:hover, .next-column:hover {
+    background-color: rgba(176, 171, 171, 0.8);
+}
+
+
+/* Product Showcase */
+.product-showcase {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+.product {
+    text-align: center;
+    padding: 20px;
+}
+
+.product img {
+    width: 150px;
+    height: auto;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
